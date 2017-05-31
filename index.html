@@ -6,33 +6,48 @@
   <title></title>
   <link rel="stylesheet" href="public/style.css">
   <link rel="icon" href="https://format-com-cld-res.cloudinary.com/image/upload/s--II9bfPuE--/c_limit,g_center,h_192,w_192/a_auto,fl_keep_iptc.progressive,q_95/259665-30060187-favicon-01.png">
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
 
-<div class="frame" style="position: fixed; z-index: -99; width: 100%; height: 100%">
-<video autoplay loop class="video">
-  <source frameborder="0" height="100%" width="100%"
-    src="media/sky.mp4" type="video/mp4" frameborder="0" allowfullscreen />
-  </video>
+<div class="fullscreen-bg">
+  <div class="frame" style="position: fixed; z-index: -99; width: 100%; height: 100%">
+    <video autoplay loop class="video">
+      <source frameborder="0" height="100%" width="100%"
+        src="media/sky.mp4" type="video/mp4" frameborder="0" allowfullscreen />
+      <source src="media/sky.ogv" type="video/ogv" />
+      <source src="media/sky.webm" type="video/webm" />
+    </video>
+  </div>
 </div>
-
-<!-- <header>
-  <video autoplay loop muted class="video">
-    <source src="media/sky.mp4" type="video/mp4">
-  </video>
-</header> -->
-
+<!--
 <nav class="main_nav">
   <ul>
     <li><a href="#">Home</a></li>
   </ul>
-</nav>
+</nav> -->
 
 <div class="holder">
-  <div class="bar">Jessica Hirsch</div>
+  <div class="bar">Jessica Hirsch<br>
+    <div class="full_stack">Full Stack Web Developer</div>
+  </div>
 </div>
+
+<div style="margin-top:380px;">
+    <a id="anchorID" class="anchorClick" href="#transparency">
+        <div class="arrow-down-light-blue">Click here</div>
+    </a>
+</div>
+<div style="height:500px"></div>
+<div id="transparency"> your transparency div here </div>
+
+<div style="margin-top:380px;">
+    <a id="anchorID1" class="anchorClick" href="#transparency1">
+        <div class="arrow-down-light-blue">Click here</div>
+    </a>
+</div>
+<div style="height:500px"></div>
+<div id="transparency1" style="margin-bottom:100px;"> your transparency.1 div here </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script.js"></script>
