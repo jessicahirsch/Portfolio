@@ -35,3 +35,12 @@ $(document).ready(function() {
 });
 
 });
+
+$(function() {
+    $( "#transparency1" ).tooltip({
+        show: {
+        effect: "slideDown",
+        delay: 300
+        }
+    });
+});
