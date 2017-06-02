@@ -7,8 +7,29 @@
   <link rel="stylesheet" href="public/style.css">
   <link rel="icon" href="https://format-com-cld-res.cloudinary.com/image/upload/s--II9bfPuE--/c_limit,g_center,h_192,w_192/a_auto,fl_keep_iptc.progressive,q_95/259665-30060187-favicon-01.png">
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <style>
+  body{
+    width: auto;
+  }
+  #items{
+  overflow-x: scroll;
+  width: auto;
+  }
+  .item{
+     display: inline-block;
+     width: 400px;
+     height: 100px;
+     border:1px solid;
+  }
+
+  </style>
+
 </head>
 <body>
+<title>Jessica Hirsch</title>
+
+<div class="side-nav"></div>
 
 <div class="fullscreen-bg">
   <div class="frame" style="position: fixed; z-index: -99; width: 100%; height: 100%">
@@ -33,21 +54,38 @@
   </div>
 </div>
 
+<div class="scroll">
 <div style="margin-top:380px;">
-    <a id="anchorID" class="anchorClick" href="#transparency">
-        <div class="arrow-down-light-blue">Click here</div>
+    <a id="anchorID" class="anchorClick" href="#transparency" style="text-decoration:none">
+      <div class="arrow-down" id="bounce"><img src="media/double-arrow-down.png" height="50" width="50"/></div>
     </a>
 </div>
 <div style="height:500px"></div>
-<div id="transparency"> your transparency div here </div>
+<div id="transparency"> Portfolio </div>
+
+<div id="items">
+   <div class="item">
+     CANDYLAND
+   </div>
+   <div class="item">
+     SEASONAL COCKTAILS
+   </div>
+   <div class="item">
+     ATTR_READER
+   </div>
+   <div class="item">
+     ON SITE
+   </div>
+</div>
 
 <div style="margin-top:380px;">
-    <a id="anchorID1" class="anchorClick" href="#transparency1">
-        <div class="arrow-down-light-blue">Click here</div>
+    <a id="anchorID1" class="anchorClick" href="#transparency1" style="text-decoration:none">
+      <div class="arrow-down" id="bounce"><img src="media/double-arrow-down.png" height="50" width="50"/></div>
     </a>
 </div>
-<div style="height:500px"></div>
-<div id="transparency1" style="margin-bottom:100px;"> your transparency.1 div here </div>
+<div style="height:1000px"></div>
+<div id="transparency1" style="margin-bottom:100px;"> Contact </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script.js"></script>

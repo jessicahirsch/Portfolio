@@ -1,25 +1,23 @@
-.frame {
+/*.frame {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -99;
-}
-/*
-.holder {
-  position: absolute;
-  top: -100;
-  left: 100;
-  width: 700px;
-  height: 200px;
-  background: rgb(214, 241, 255);
-  opacity: 0.3;
-  z-index: 50;
-  color: black;
-  pointer-events: none;
-  margin: auto;
-  margin-left: 250px;
-  margin-top: 300px;
 }*/
+
+.side-nav {
+  /*margin-right: 1100px;*/
+  float: left;
+  background-color: #910d0d;
+  background-color: rgba(145,13,13,.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  z-index: 0;
+}
 
 .bar {
   z-index: 99;
@@ -28,13 +26,78 @@
   font-size: 8em;
   font-family: 'Quicksand', sans-serif;
 }
+
 .full_stack {
   z-index: 99;
   color: black;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
 }
+
+.scroll {
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+#transparency, #transparency1 {
+  text-align: center;
+}
+
+#items {
+  overflow-x: scroll;
+  /*width: auto;*/
+  white-space: nowrap;
+  /*height: auto;*/
+}
+
+.arrow-down {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  z-index: 99;
+}
+
+/*  #bounce {
+    position:fixed;
+    left:50%;
+    bottom:0;
+    margin-top:-25px;
+    margin-left:-25px;
+    height:50px;
+    width:50px;
+    -webkit-animation:bounce 1s infinite;
+    -moz-animation:bounce 1s infinite;
+    -o-animation:bounce 1s infinite;
+    animation:bounce 1s infinite;
+
+  }
+
+  @-webkit-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+
+   @-moz-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+
+   @-o-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+
+   @keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }*/
 
 html, body {
   height: 100%;

@@ -17,3 +17,21 @@ $(document).ready(function(){
       }, 2000);
    });
 });
+
+var arrow = $('#arrow-down');
+function runIt() {
+   baloon.animate({top:'+=20'}, 1000);
+   baloon.animate({top:'-=20'}, 1000, runIt);
+}
+
+runIt();
+
+$(document).ready(function() {
+
+     $('.arrow-down').jqFloat({
+    width: 0,
+    height: 20,
+    speed: 1000
+});
+
+});
