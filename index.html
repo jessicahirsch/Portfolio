@@ -5,25 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <link rel="stylesheet" href="public/style.css">
-  <link rel="icon" href="https://format-com-cld-res.cloudinary.com/image/upload/s--II9bfPuE--/c_limit,g_center,h_192,w_192/a_auto,fl_keep_iptc.progressive,q_95/259665-30060187-favicon-01.png">
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="icon" type="image/png" href="media/JH.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 
   <style>
 
   body {
-    width: auto;
+    /*width: auto;*/
     /*overflow-y: scroll;*/
     /*overflow-x: hidden;*/
     /*perspective: 1px;*/
     /*transform-style: preserve-3d;*/
   }
-
+/*
   .item {
      display: inline-block;
-     width: 700px;
+     width: 500px;
      height: 500px;
      border:1px solid;
-  }
+     background: rgb(108, 232, 0);
+     opacity: 0.5;
+     z-index: -1;
+  }*/
 
   </style>
 
@@ -31,18 +39,25 @@
 <body>
 <title>Jessica Hirsch</title>
 
-<div class="side-nav"></div>
+<!-- <div class="side-nav"></div> -->
+
+<!-- <img src="media/coffee.jpg" /> -->
 
 <div class="fullscreen-bg">
   <div class="frame" style="position: fixed; z-index: -99; width: 100%; height: 100%">
-      <img src="media/coffee.jpg" style="position: fixed; z-index: -99; width: 100%; height: 100%"></img>
+    <video autoplay loop class="video">
+      <source frameborder="0" height="100%" width="100%"
+        src="media/sky.mp4" type="video/mp4" frameborder="0" allowfullscreen />
+      <source src="media/sky.ogv" type="video/ogv" />
+      <source src="media/sky.webm" type="video/webm" />
+    </video>
+      <!-- <img src="media/coffee.jpg" </img> -->
   </div>
 </div>
 
 <div class="holder">
-  <div class="bar">Jessica Hirsch<br>
-    <div class="full_stack">Full Stack Web Developer</div>
-  </div>
+  <div class="jessica"><strong>Jessica</strong></div> <div class="hirsch">Hirsch</div>
+  <div class="full_stack">Full Stack Web Developer</div>
 </div>
 
 <!-- <ul class="images">
@@ -50,56 +65,81 @@
   <li>...</li>
   <li>...</li>
 </ul> -->
+<!-- <div class="scroll_div"></div> -->
 
-<div class="scroll">
-<div style="margin-top:380px;">
+<!-- <div class="scroll">
+<div style="margin-top:380px; text-align:center; font-family: 'Megrim', cursive;">Learn More
     <a id="anchorID" class="anchorClick" href="#transparency" style="text-decoration:none">
       <div class="arrow-down" id="bounce"><img src="media/double-arrow-down.png" height="50" width="50"/></div>
     </a>
-</div>
+</div> -->
 
-<!--     <video autoplay loop class="video">
-      <source frameborder="0" height="100%" width="100%"
-        src="media/sky.mp4" type="video/mp4" frameborder="0" allowfullscreen />
-      <source src="media/sky.ogv" type="video/ogv" />
-      <source src="media/sky.webm" type="video/webm" />
-    </video> -->
 
-<div class="scroll_div"></div>
 
 <div style="height:500px"></div>
-<div id="transparency"> Portfolio </div>
+<!-- <div class="portfolio" > Portfolio </div> -->
 
-<br><div id="items">
-   <div class="item" height="50" width="50">
-     CANDYLAND
-   </div>
-   <div class="item">
-     SEASONAL COCKTAILS
-   </div>
-   <div class="item">
-     ATTR_READER
-   </div>
-   <div class="item">
-     ON SITE
-   </div>
+<div class="parallax_section parallax_image_first" data-parallax="scroll" data-image-src="media/coffee.jpg" style="font-family: 'Megrim', cursive; font-size:20px">
+ <div class="center">
+ <!-- <article> Portfolio </article> -->
+ <img src="media/coffee.jpg" style="position: absolute; z-index: 100; width: 300px; height: 200px"/>
+ </div>
+ </div>
+<!--Block with content-->
+<div class="content_block">
+ <div class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet tempor lorem. Proin egestas sagittis orci sit amet ultricies. Etiam nec pharetra justo, scelerisque scelerisque elit. Nam pretium purus eu neque pretium accumsan. Proin eget pulvinar dui. Vestibulum nulla magna, auctor quis mollis eget, hendrerit nec enim. Nam commodo feugiat metus, ac auctor mi. Quisque sed ante eget arcu sollicitudin sodales nec nec nunc.</div>
 </div>
+<div class="parallax_section parallax_image_second" data-image-src="media/coffee.jpg" data-parallax="scroll">
+ <div class="center">
+ <article>Some text</article>
+ </div>
+ </div>
+<!--Block with content-->
 
-<div style="margin-top:380px;">
+<div class="content_block">
+
+<div class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet tempor lorem. Proin egestas sagittis orci sit amet ultricies. Etiam nec pharetra justo, scelerisque scelerisque elit. Nam pretium purus eu neque pretium accumsan. Proin eget pulvinar dui. Vestibulum nulla magna, auctor quis mollis eget, hendrerit nec enim. Nam commodo feugiat metus, ac auctor mi. Quisque sed ante eget arcu sollicitudin sodales nec nec nunc.</div>
+
+<div style="height:1000px"></div>
+  <div class="icons" style="margin-left:725px">
+    <div class="icon" id="gh"><a href="https://github.com/jessicahirsch" target="_blank"><img src="media/github-black.png" height="50" width="50"></a></div>
+    <div class="icon" id="li"><a href="https://www.linkedin.com/in/jessicarhirsch/" target="_blank"><img src="media/linkedin.png" height="50" width="50"></a></div>
+  </div>
+  <div id="transparency1" class="contact" style="margin-bottom:100px; font-family: 'Megrim', cursive;"> Contact </div>
+</div>
+</div>
+<!-- <br><div id="items" style="font-family: 'Poiret One', cursive;">
+<div class="container">
+<section class="module parallax parallax-1">
+CANDYLAND
+</section>
+</div>
+<div class="container">
+<section class="module content">
+SEASONAL COCKTAILS
+</section>
+</div>
+<div class="container">
+<section class="module parallax parallax-2">
+ATTR_READER
+</section>
+</div>
+<div class="container">
+<section class="module content">
+ON SITE
+</section>
+</div>
+</div> -->
+
+<!-- <div style="margin-top:380px;">
     <a id="anchorID1" class="anchorClick" href="#transparency1" style="text-decoration:none">
       <div class="arrow-down" id="bounce"><img src="media/double-arrow-down.png" height="50" width="50"/></div>
     </a>
-</div>
+</div> -->
 
-<div style="height:1000px"></div>
-  <div class="icons" style="margin-left:650px">
-    <div class="icon"><a href="https://github.com/jessicahirsch" target="_blank"><img src="media/github-black.png" height="50" width="50"></a></div>
-    <div class="icon"><a href="https://www.linkedin.com/in/jessicarhirsch/" target="_blank"><img src="media/linkedin.png" height="50" width="50"></a></div>
-  </div>
-  <div id="transparency1" style="margin-bottom:100px"> Contact </div>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="parallax.js-1.4.2/parallax.js"></script>
 <script src="script.js"></script>
 
 </body>

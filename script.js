@@ -20,27 +20,30 @@ $(document).ready(function(){
 
 var arrow = $('#arrow-down');
 function runIt() {
-   baloon.animate({top:'+=20'}, 1000);
-   baloon.animate({top:'-=20'}, 1000, runIt);
+   arrow.animate({top:'+=20'}, 1000);
+   arrow.animate({top:'-=20'}, 1000, runIt);
 }
 
 runIt();
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-     $('.arrow-down').jqFloat({
-    width: 0,
-    height: 20,
-    speed: 1000
-});
+//      $('.arrow-down').jqFloat({
+//     width: 0,
+//     height: 20,
+//     speed: 1000
+// });
 
-});
+// });
 
-$(function() {
-    $( "#transparency1" ).tooltip({
-        show: {
-        effect: "slideDown",
-        delay: 300
-        }
-    });
-});
+// $(function() {
+//     $( "#transparency1" ).tooltip({
+//         show: {
+//         effect: "slideDown",
+//         delay: 300
+//         }
+//     });
+// });
+
+
+$('.parallax-window').parallax({imageSrc: 'media/coffee.jpg'});
