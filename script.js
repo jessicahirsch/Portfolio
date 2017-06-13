@@ -23,16 +23,21 @@ $(document).ready(function(){
 // });
 
 $(".arrow-down")
-    .click(function()
-        {
-            $("#bounce")
-                .animate({height: 0}, 1000,"linear",function()
-                    {
-                        $(this).remove();
-                    }
-                )
-        }
-    );
+  .click(function() {
+    $("#bounce")
+      .animate({height: 0}, 1000,"linear", function() {
+    $(this).remove();
+    })
+  }
+);
+
+var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
+if( iOS ) {
+    var background_videos = document.querySelectorAll('.video-bg video');
+    for( i=0; i<background_videos.length; i++ ) {
+        background_videos[i].parentNode.removeChild(background_videos[i]);
+    }
+}
 
 // $(document).ready(function() {
 
@@ -52,8 +57,3 @@ $(".arrow-down")
 //         }
 //     });
 // });
-
-
-$('.parallax-window').parallax({imageSrc: 'media/coffee.jpg'});
-
-// var $fullstack = $('.fullstack').toUpperCase();
