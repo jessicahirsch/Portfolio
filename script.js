@@ -18,13 +18,21 @@ $(document).ready(function(){
    });
 });
 
-var arrow = $('#arrow-down');
-function runIt() {
-   arrow.animate({top:'+=20'}, 1000);
-   arrow.animate({top:'-=20'}, 1000, runIt);
-}
+// $('.arrow-down').on('click', function(){
+//     $(this).parent().parent().remove();
+// });
 
-runIt();
+$(".arrow-down")
+    .click(function()
+        {
+            $("#bounce")
+                .animate({height: 0}, 1000,"linear",function()
+                    {
+                        $(this).remove();
+                    }
+                )
+        }
+    );
 
 // $(document).ready(function() {
 
