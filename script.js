@@ -48,4 +48,4 @@ runIt();
 
 $('.parallax-window').parallax({imageSrc: 'media/coffee.jpg'});
 
-var $fullstack = $('.fullstack').toUpperCase();
+// var $fullstack = $('.fullstack').toUpperCase();
